@@ -1,14 +1,7 @@
-// index.js
-const express = require('express')
-const app = express()
-const PORT = 4000
-app.get('/', (req, res) => {
-  res.send("<H1 style=color:blue;>Express on Vercel is working! Test 1</H1>");
-})
+const express = require("express");
+const app = express();
 
-app.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}`);
-});
+app.get("/", (req, res) => res.send("<H1 style=color:blue;>Express on Vercel is working! 6</H1>"));
+app.listen(4000, () => console.log("Server ready on port 4000."));
 
-// Export the Express API
-module.exports = app
+module.exports = app;
