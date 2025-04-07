@@ -2,8 +2,8 @@
 const express = require('express')
 const app = express()
 const PORT = 4000
-app.get('/home', (req, res) => {
-  res.status(200).json('Welcome, your app is working well');
+app.get('/', (req, res) => {
+  res.send("<H1 style=color:blue;>Express on Vercel is working! Test 1</H1>");
 })
 
 app.listen(PORT, () => {
